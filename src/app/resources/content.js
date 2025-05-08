@@ -6,10 +6,10 @@ const person = {
   get name() {
     return `${this.firstName} ${this.lastName}`;
   },
-  role: "Design Engineer",
+  role: "SDE Intern",
   avatar: "/images/avatar.jpg",
-  location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
+  location: "Asia/Kolkata", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+  languages: ["English", "Kannada", "Telugu", "Hindi"], // optional: Leave the array empty if you don't want to display languages
 };
 
 const newsletter = {
@@ -34,7 +34,7 @@ const social = [
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/company/once-ui/",
+    link: "https://www.linkedin.com/in/yashas-r-n/",
   },
   {
     name: "X",
@@ -44,7 +44,7 @@ const social = [
   {
     name: "Email",
     icon: "email",
-    link: "mailto:example@gmail.com",
+    link: "mailto:yashasrn2002@gmail.com",
   },
 ];
 
@@ -52,11 +52,11 @@ const home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Design engineer and builder</>,
+  headline: <>Software Development Engineer(SDE) </>,
   subline: (
     <>
-      I'm Yashas, a platform engineer intern at <InlineCode>Fisdom</InlineCode>, where I craft intuitive
-      <br /> developer experience. After hours, I build my own projects.
+      I'm Yashas, a SDE intern at <InlineCode>Fisdom</InlineCode>where I build scalable and efficient
+      <br /> software solutions. After hours, I explore new technologies and work on my own projects.
     </>
   ),
 };
@@ -81,8 +81,8 @@ const about = {
     title: "Introduction",
     description: (
       <>
-        Selene is a Jakarta-based design engineer with a passion for transforming complex challenges
-        into simple, elegant design solutions. Her work spans digital interfaces, interactive
+        Yashas is a indian-based SDE with a passion for transforming complex challenges
+        into simple, elegant design solutions. My work spans digital interfaces, interactive
         experiences, and the convergence of design and technology.
       </>
     ),
@@ -92,9 +92,9 @@ const about = {
     title: "Work Experience",
     experiences: [
       {
-        company: "FLY",
-        timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
+        company: "Fisdom",
+        timeframe: "Feb 2025 - Present",
+        role: "SDE Intern",
         achievements: [
           <>
             Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
@@ -138,8 +138,8 @@ const about = {
     title: "Studies",
     institutions: [
       {
-        name: "University of Jakarta",
-        description: <>Studied software engineering.</>,
+        name: "PES Insititute of Technology & Management",
+        description: <>Bachelor of Engineering in Computer Science and Engineering (CSE) .</>,
       },
       {
         name: "Build the Future",
