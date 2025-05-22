@@ -4,8 +4,9 @@ const routes = {
   "/": true,
   "/about": true,
   "/work": true,
-  "/blog": true,
-  "/gallery": true,
+  "/blog": false, // Set to false to hide the blog section
+  "/gallery": false,
+  //"/projects": true, // Add this line to include the projects route
 };
 
 // Enable password protection on selected routes

@@ -1,19 +1,19 @@
 import { InlineCode } from "@/once-ui/components";
 
 const person = {
-  firstName: "Yashas",
-  lastName: "R N",
+  firstName: "Aditya",
+  lastName: "S Jadhav",
   get name() {
     return `${this.firstName} ${this.lastName}`;
   },
-  role: "SDE Intern",
+  role: "CSE Pre final year student",
   avatar: "/images/avatar.jpg",
   location: "Asia/Kolkata", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Kannada", "Telugu", "Hindi"], // optional: Leave the array empty if you don't want to display languages
+  languages: ["English", "Kannada", "Marathi", "Hindi"], // optional: Leave the array empty if you don't want to display languages
 };
 
 const newsletter = {
-  display: true,
+  display: false,
   title: <>Subscribe to {person.firstName}'s Newsletter</>,
   description: (
     <>
@@ -29,12 +29,12 @@ const social = [
   {
     name: "GitHub",
     icon: "github",
-    link: "https://github.com/once-ui-system/nextjs-starter",
+    link: "https://github.com/adityajadhav6",
   },
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/in/yashas-r-n/",
+    link: "http://www.linkedin.com/in/aditya-s-jadhav-422814259/",
   },
   {
     name: "X",
@@ -44,7 +44,7 @@ const social = [
   {
     name: "Email",
     icon: "email",
-    link: "mailto:yashasrn2002@gmail.com",
+    link: "mailto:adi.jadhav674@gmail.com",
   },
 ];
 
@@ -52,11 +52,11 @@ const home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Software Development Engineer(SDE) </>,
+  headline: <>My Portfolio </>,
   subline: (
     <>
-      I'm Yashas, a SDE intern at <InlineCode>Fisdom</InlineCode>where I build scalable and efficient
-      <br /> software solutions. After hours, I explore new technologies and work on my own projects.
+I’m Aditya S Jadhav, a pre final year Computer Science Engineering student at <InlineCode>PESITM</InlineCode>, passionate about building scalable and efficient software solutions. 
+I enjoy exploring new technologies and applying them through hands-on projects, constantly sharpening my skills with the goal of securing a meaningful internship opportunity.
     </>
   ),
 };
@@ -73,7 +73,7 @@ const about = {
     display: true,
   },
   calendar: {
-    display: true,
+    display: false,
     link: "https://cal.com",
   },
   intro: {
@@ -81,7 +81,7 @@ const about = {
     title: "Introduction",
     description: (
       <>
-        Yashas is a indian-based SDE with a passion for transforming complex challenges
+        Aditya is an Indian-based SDE aspirant with a passion for transforming complex challenges
         into simple, elegant design solutions. My work spans digital interfaces, interactive
         experiences, and the convergence of design and technology.
       </>
@@ -92,17 +92,17 @@ const about = {
     title: "Work Experience",
     experiences: [
       {
-        company: "Fisdom",
-        timeframe: "Feb 2025 - Present",
-        role: "SDE Intern",
+        company: "Citigroup Inc",
+        timeframe: "Virtual Internship",
+        role: "Software developer",
         achievements: [
           <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
+            Completed a job simulation involving hypothetical tasks to improve
+             Citi’s loan management system and stock market risk reporting
           </>,
           <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
+            Created a state diagram of the loan management process 
+            using the Unified Modeling Language (UML).
           </>,
         ],
         images: [
@@ -115,22 +115,7 @@ const about = {
           },
         ],
       },
-      {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
-        achievements: [
-          <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
-          </>,
-          <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
-          </>,
-        ],
-        images: [],
-      },
+      //Paste here of one experience
     ],
   },
   studies: {
@@ -142,8 +127,8 @@ const about = {
         description: <>Bachelor of Engineering in Computer Science and Engineering (CSE) .</>,
       },
       {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
+        name: "Excellent Science and Commerce PU College",
+        description: <>Completed 12th.</>,
       },
     ],
   },
@@ -152,35 +137,19 @@ const about = {
     title: "Technical skills",
     skills: [
       {
-        title: "Figma",
-        description: <>Able to prototype in Figma with Once UI with unnatural speed.</>,
+        title: "Python",
+        description: <>Familiar with Backend framework like Flask.</>,
         // optional: leave the array empty if you don't want to display images
         images: [
-          {
-            src: "/images/projects/project-01/cover-02.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-          {
-            src: "/images/projects/project-01/cover-03.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
+      
         ],
       },
       {
-        title: "Next.js",
-        description: <>Building next gen apps with Next.js + Once UI + Supabase.</>,
+        title: "React",
+        description: <>Building next gen Webapps with React.js .</>,
         // optional: leave the array empty if you don't want to display images
         images: [
-          {
-            src: "/images/projects/project-01/cover-04.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
+         
         ],
       },
     ],
@@ -196,11 +165,29 @@ const blog = {
 };
 
 const work = {
-  label: "Work",
-  title: "My projects",
-  description: `Design and dev projects by ${person.name}`,
-  // Create new project pages by adding a new .mdx file to app/blog/posts
-  // All projects will be listed on the /home and /work routes
+  label: "work",
+  title: "Projects I've worked on",
+  description: `Some highlighted projects developed by ${person.name}`,
+  items: [
+    {
+      name: "Research Center Management System",
+      timeframe: "2024",
+      techStack: ["CSS", "MySQL", "PHP"],
+      description: (
+        <>
+          Developed and maintained a web-based platform to manage Doctorates, Supervisors, and Advisory Committee records
+          using PHP and MySQL.
+        </>
+      ),
+      images: [
+        {
+          src: "/images/projects/research-center/cover-01.jpg",
+          alt: "Research Center Cover",
+        },
+      ],
+      fallbackImage: "/images/default-placeholder.jpg", // Add a fallback image
+    },
+  ],
 };
 
 const gallery = {
@@ -283,3 +270,4 @@ const gallery = {
 };
 
 export { person, social, newsletter, home, about, blog, work, gallery };
+
