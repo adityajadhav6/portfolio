@@ -1,4 +1,5 @@
 import { InlineCode } from "@/once-ui/components";
+import { title } from "process";
 
 const person = {
   firstName: "Aditya",
@@ -152,6 +153,13 @@ const about = {
          
         ],
       },
+      {
+        title:"Docker",
+        description: <>Containerizing applications for consistent environments.</>,
+        // optional: leave the array empty if you don't want to display images
+        images: [
+          
+        ],}
     ],
   },
 };
