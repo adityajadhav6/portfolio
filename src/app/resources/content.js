@@ -11,7 +11,7 @@ const person = {
   avatar: "/images/avatar.jpg",
   location: "Asia/Kolkata",
   languages: ["English", "Kannada", "Marathi", "Hindi"],
-  resumeLink: "https://drive.google.com/file/d/1eJz4NWMEnUnxf8087XjR7UaorsgJfs6F/view?usp=sharing", // Add your Google Drive link here
+  resumeLink: "https://drive.google.com/file/d/1pkieDHC4X75GktK-fAx7PPDeBXXXpNts/view?usp=sharing", // Add your Google Drive link here
 };
 
 const newsletter = {
