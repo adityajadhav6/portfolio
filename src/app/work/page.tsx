@@ -1,8 +1,8 @@
 import { getPosts } from "@/app/utils/utils";
-import { Column } from "@/once-ui/components";
+import { Column, SmartLink, Button } from "@/once-ui/components";
 import { Projects } from "@/components/work/Projects";
 import { baseURL } from "@/app/resources";
-import { person, work } from "@/app/resources/content";
+import { person, work, about } from "@/app/resources/content";
 
 export async function generateMetadata() {
   const title = work.title;
@@ -64,6 +64,11 @@ export default function Work() {
         }}
       />
       <Projects />
+      <section>
+        <SmartLink href={about.resumeLink} target="_blank">
+          <Button variant="primary">Resume</Button>
+        </SmartLink>
+      </section>
     </Column>
   );
 }

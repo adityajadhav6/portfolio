@@ -7,10 +7,11 @@ const person = {
   get name() {
     return `${this.firstName} ${this.lastName}`;
   },
-  role: "CSE Pre final year student",
+  role: "CSE final year student",
   avatar: "/images/avatar.jpg",
-  location: "Asia/Kolkata", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Kannada", "Marathi", "Hindi"], // optional: Leave the array empty if you don't want to display languages
+  location: "Asia/Kolkata",
+  languages: ["English", "Kannada", "Marathi", "Hindi"],
+  resumeLink: "https://drive.google.com/file/d/1eJz4NWMEnUnxf8087XjR7UaorsgJfs6F/view?usp=sharing", // Add your Google Drive link here
 };
 
 const newsletter = {
@@ -53,10 +54,10 @@ const home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>My Portfolio </>,
+  headline: <>Aditya S Jadhav </>,
   subline: (
     <>
-I’m Aditya S Jadhav, a pre final year Computer Science Engineering student at <InlineCode>PESITM</InlineCode>, passionate about building scalable and efficient software solutions. 
+I’m a final year Computer Science Engineering student at <InlineCode>PESITM</InlineCode>, passionate about building scalable and efficient software solutions. 
 I enjoy exploring new technologies and applying them through hands-on projects, constantly sharpening my skills with the goal of securing a meaningful internship opportunity.
     </>
   ),
@@ -66,6 +67,7 @@ const about = {
   label: "About",
   title: "About me",
   description: `Meet ${person.name}, ${person.role} from ${person.location}`,
+  resumeLink: person.resumeLink, // Use the resume link from the person object
   tableOfContent: {
     display: true,
     subItems: false,
@@ -82,9 +84,9 @@ const about = {
     title: "Introduction",
     description: (
       <>
-        Aditya is an Indian-based SDE aspirant with a passion for transforming complex challenges
-        into simple, elegant design solutions. My work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
+        I’m a computer science student with a growing interest in backend development.
+        I’m currently exploring how things work behind the scenes and building projects to strengthen my skills.
+        I’m actively looking for internship opportunities where I can learn from real-world experience and also contribute my knowledge toward the company’s growth.
       </>
     ),
   },
@@ -125,11 +127,11 @@ const about = {
     institutions: [
       {
         name: "PES Insititute of Technology & Management",
-        description: <>Bachelor of Engineering in Computer Science and Engineering (CSE) .</>,
+        description: <>Bachelor of Engineering in Computer Science and Engineering, CGPA=7.6 </>,
       },
       {
         name: "Excellent Science and Commerce PU College",
-        description: <>Completed 12th.</>,
+        description: <>Completed Class 12 (PUC) with 93.3%</>,
       },
     ],
   },
@@ -152,6 +154,20 @@ const about = {
         images: [
          
         ],
+      },
+      {
+        title: "C",
+        description: <>Proficient in writing structured programs using functions, arrays, stacks, queues, and linked lists.
+         Able to implement basic algorithms and solve logical problems.</>,
+        // optional: leave the array empty if you don't want to display images
+        images: [
+         
+        ],
+      },
+      {
+        title:"Express.js",
+        description: <>Developed server-side logic and REST APIs for full-stack projects using Express, 
+        with basic understanding of middleware and database connectivity.</>,
       },
       {
         title:"Docker",

@@ -27,44 +27,23 @@ export function generateMetadata({ params: { slug } }: WorkParams) {
     return;
   }
 
-  let {
-    title,
-    publishedAt: publishedTime,
-    summary: description,
-    images,
-    image,
-    team,
-  } = post.metadata;
-  let ogImage = image ? `https://${baseURL}${image}` : `https://${baseURL}/og?title=${title}`;
-
   return {
-    title,
-    description,
-    images,
-    team,
+    title: post.metadata.title,
+    description: post.metadata.summary,
     openGraph: {
-      title,
-      description,
-      type: "article",
-      publishedTime,
-      url: `https://${baseURL}/work/${post.slug}`,
-      images: [
-        {
-          url: ogImage,
-        },
-      ],
-    },
-    twitter: {
-      card: "summary_large_image",
-      title,
-      description,
-      images: [ogImage],
+      title: post.metadata.title,
+      description: post.metadata.summary,
+      url: `${baseURL}/work/${slug}`,
+      images: post.metadata.images.map((image) => ({
+        url: `https://${baseURL}${image}`,
+        alt: post.metadata.title,
+      })),
     },
   };
 }
 
 export default function Project({ params }: WorkParams) {
-  let post = getPosts(["src", "app", "work", "projects"]).find((post) => post.slug === params.slug);
+  const post = getPosts(["src", "app", "work", "projects"]).find((post) => post.slug === params.slug);
 
   if (!post) {
     notFound();
